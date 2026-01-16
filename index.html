@@ -37,3 +37,35 @@
 <p>
  <p><strong><a href="mailto:scaplina@gmail.com">Напиши мне</a></strong></p>
 </p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+</head>
+<body> 16 января 2026 
+<script>
+        document.write(new Date().toLocaleDateString('ru-RU', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'long'
+        }));
+    </script> 
+ <h1>Решение шифров Цезаря</h1>
+
+    <h2>1. Определение ключей шифра Цезаря</h2>
+    <p><strong>а.</strong> АПЕЛЬСИН → САЦЬНВЩЮ<br>
+       Ключ: <code>+2</code></p>
+    <p><strong>б.</strong> АБРИКОС → ЫЬЛГЕЙМ<br>
+       Ключ: <code>-4</code> (или <code>+28</code> по модулю 32)</p>
+
+    <h2>2. Расшифровка сообщений</h2>
+    <p><strong>а.</strong> ФХНЗКЧ → <code>ШИФРЫ</code> (ключ = +5, значит расшифровка сдвигом -5)</p>
+    <p><strong>б.</strong> ЦЩЕБФ → <code>ТЕСТЫ</code> (ключ = +3, расшифровка сдвигом -3)</p>
+
+    <h2>3. Шифрование фамилии с ключом 10</h2>
+    <p>Пример для фамилии "ЦАПЛИНА":<br>
+       Зашифровано: <code>АКЩХТЧК</code></p>
+</body>
+</html>
